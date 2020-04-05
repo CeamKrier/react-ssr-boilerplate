@@ -3,7 +3,7 @@ This boilerplate constructed upon create-react-app and utilizing server-side ren
 ## Why
 
 If you would love to use the server-side rendering on your react application yet don't want to struggle with a new framework then here the solution for ya.
-This is a most basic implementation that would get you up an running for the SSR so, no routing etc.
+This is the most basic implementation that would get you up an running for the SSR app. So, no routing etc.
 
 ## The flow
 
