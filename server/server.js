@@ -12,10 +12,6 @@ const app = express();
 
 app.use(compression());
 
-app.use(
-	express.static(path.resolve(__dirname, '..', 'build'), { maxAge: '30d' })
-);
-
 const serverRenderer = (req, res, next) => {
 	fs.readFile(path.resolve('./build/index.html'), 'utf8', (err, data) => {
 		if (err) {
@@ -31,7 +27,9 @@ const serverRenderer = (req, res, next) => {
 	});
 };
 
-app.get('*', serverRenderer);
+app.get('/', serverRenderer);
+
+app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
 app.listen(PORT, () => {
 	console.log(`Server is up and running on port ${PORT}`);
