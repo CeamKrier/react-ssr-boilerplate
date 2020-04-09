@@ -1,5 +1,5 @@
 const Config = {
-	HTML_FILE_PATH = './build/index.html'
+	HTML_FILE_PATH: './build/index.html',
 };
 
 export default Config;
