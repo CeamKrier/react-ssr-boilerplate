@@ -8,7 +8,8 @@
 		"react-dom": "^16.13.1"
 	},
 	"scripts": {
-		"dev": "react-scripts start",
+		"dev:csr": "react-scripts start",
+		"dev:ssr": "nodemon --watch src server/index.js SSR",
 		"start": "node server/index.js",
 		"prebuild": "rimraf build",
 		"build": "react-scripts build",

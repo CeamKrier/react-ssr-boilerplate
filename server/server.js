@@ -21,6 +21,7 @@ app.use(compression());
  */
 app
 	.disable('x-powered-by')
+	.use('/style', express.static(path.resolve(Config.CSS_FILE_PATH)))
 	.use(express.static(path.resolve(Config.BUILD_FOLDER_PATH), { index: false }))
 	.get('/', HomeRoute);
 
