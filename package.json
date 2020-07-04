@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"dev:csr": "react-scripts start",
-		"dev:ssr": "nodemon --watch src server/index.js SSR",
+		"dev:ssr": "nodemon server/index.js SSR --config nodemon.json",
 		"start": "node server/index.js",
 		"prebuild": "rimraf build",
 		"build": "react-scripts build",
